@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fábrica de Telescópios</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a1a2a;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #112240;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #1f4068;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #61dafb;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #61dafb;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #21a1f1;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+
+    .hero img {
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #21a1f1aa;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h2 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+      color: #61dafb;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      color: #cfd8dc;
+    }
+
+    section#products {
+      background-color: #112240;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #1f4068;
+    }
+
+    section#products h3 {
+      text-align: center;
+      color: #61dafb;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .product-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .product-item {
+      background-color: #1f2a44;
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 0 10px #1f4068;
+      transition: transform 0.3s ease;
+    }
+
+    .product-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 15px #21a1f1;
+    }
+
+    .product-item h4 {
+      color: #21a1f1;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .product-item p {
+      color: #cfd8dc;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #112240;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 60px;
+      color: #7a8ea3;
+      font-size: 0.9rem;
+      border-top: 2px solid #1f4068;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Telescopix</h1>
+    <nav>
+      <a href="#home">Início</a>
+      <a href="#products">Produtos</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="Telescópio em ação" />
+      <div class="hero-text">
+        <h2>Explorando o universo com precisão</h2>
+        <p>Na Telescopix, fabricamos telescópios de alta qualidade para astrônomos amadores e profissionais. Nosso compromisso é com a inovação, tecnologia e a melhor experiência na observação do cosmos.</p>
+      </div>
+    </section>
+
+    <section id="products">
+      <h3>Nossos Telescópios</h3>
+      <div class="product-list">
+        <article class="product-item">
+          <h4>Telescópio Refrator</h4>
+          <p>Ideal para observação lunar e planetária com imagens claras e nítidas.</p>
+        </article>
+        <article class="product-item">
+          <h4>Telescópio Reflector</h4>
+          <p>Excelente para capturar objetos mais distantes, como nebulosas e galáxias.</p>
+        </article>
+        <article class="product-item">
+          <h4>Telescópio Catadióptrico</h4>
+          <p>Combina refrator e refletor, oferecendo versatilidade e alta performance.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Contato: contato@telescopix.com | Telefone: (11) 99999-9999</p>
+    <p>© 2025 Telescopix - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
